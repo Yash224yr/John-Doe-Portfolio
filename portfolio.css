@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+#header .righthead a{
+    color: gray;
+    font-size: 40px;
+}
+#mid{
+    display: flex;
+    height: 80vh;
+}
+#mid .leftmid{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mid .leftmid img{
+    width: 224px;
+}
+#mid .rightmid{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+#mid .bar{
+    height: 5px;
+    width: 59px;
+    background-color: black;
+    margin-top: 8px;
+}
+#mid .rightmid .info{
+    margin: 20px 0;
+}
+#mid .rightmid .info h3{
+   font-size: 25px;
+   color: gray;
+}
+#mid .rightmid .info span{
+    color: black;
+}
+#mid .rightmid .look{
+    margin-top: 40px;
+}
+#mid .rightmid .look a{
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 25px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#mid .rightmid .look a:hover{
+    color: white;
+    z-index: 1;
+}
+#mid .rightmid .look a::before{
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: black;
+    transition: 0.5s;
+}
+#mid .rightmid .look a:hover::before{
+    left: 0;
+    top: 0;
+}
+
