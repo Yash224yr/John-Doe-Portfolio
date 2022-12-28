@@ -88,14 +88,18 @@
     margin-top: 80px;
     background-image: url("image/bg-1.jpg");
     background-size: cover;
-    height: 200vh;
+    width: 100%;
     background-size: cover;
+    position: relative;
+}
+.content img{
+    height: 200px;
 }
 .content{
-    padding: 6rem 6rem 5rem;
+    padding: 6rem 6rem 3rem;
 }
 #mid2 .info h1{
-    font-size: 46px;
+    font-size: 30px;
     color: white;
 }
 #mid2 .bar{
@@ -105,7 +109,127 @@
     margin-top: 8px;
 }
 #mid2 .content h3{
-    font-size: 27px;
+    font-size: 20px;
     margin-top: 20px;
     color: white
+}
+.services{
+    padding: 0 6rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    margin: 80px 0;
+    position: relative;
+}
+
+.one i{
+    font-size: 49px;
+    color: white;
+    border: 2px solid;
+    padding: 12px
+}
+.one h3{
+    margin: 20px 0;
+    font-size: 24px;
+    color: white
+}
+.one p{
+    width: 343px;
+    font-size: 18px;
+    color: white;
+}
+.services .service2 .one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.service1 .one:first-child::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 39px;
+    left: 98px;
+    border-top: 2px solid white;
+}
+.service1 .one:first-child::after{
+    content: "";
+    position: absolute;
+    height: 318px;
+    width: 0;
+    top: -39.5px;
+    left: 473px;
+    border-right: 2px solid white;
+    transform: rotate(-60deg);
+}
+.service1 .one::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 39px;
+    left: 98px;
+    border-top: 2px solid white
+}
+.service1 .one::after{
+    content: "";
+    position: absolute;
+    height: 275px;
+    width: 0;
+    top: -153px;
+    left: 463px;
+    border-right: 2px solid white;
+    transform: rotate(-114deg)
+}
+.service2 .one:first-child::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 39px;
+    left: 19px;
+    border-top: 2px solid white
+}
+.service2 .one:first-child::after{
+    content: "";
+    position: absolute;
+    height: 274px;
+    width: 0;
+    top: -19px;
+    left: -94.5px;
+    border-right: 2px solid white;
+    transform: rotate(55deg)
+}
+.service2 .one::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 39px;
+    left: 5px;
+    border-top: 2px solid white
+}
+.service2 .one::after{
+    content: "";
+    position: absolute;
+    height: 274px;
+    width: 0;
+    top: -173px;
+    left: -109.5px;
+    border-right: 2px solid white;
+    transform: rotate(-237deg);
+}
+.imac img{
+    height: 504px;
+    position: absolute;
+    left: 560px;
+    top: 31%;
+    z-index: 1;
+}
+.portfolio{
+    display: flex;
+    justify-content: center;
 }
